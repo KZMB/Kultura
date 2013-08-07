@@ -45,7 +45,6 @@ h1 {
 #links li a {
     display: block;
     position: relative;
-    background: url(http://placehold.it/200x200);
     width: 200px;
     height: 200px;
     border: 1px solid #ddd;
