@@ -4,15 +4,7 @@ body {
 }
 
 h1 {
-    width: 150px;
-    height: 145px;
-    text-indent: -1000px;
-    background: url(img/logo.png);
-    background-size: cover;
-    position: fixed;
-    overflow: hidden;
-    bottom: 0;
-    right: 14px;
+    display: none;
 }
 
 #content {
@@ -56,6 +48,7 @@ h1 {
 #links li a:hover {
     filter: none;
     -webkit-filter: grayscale(0);
+    color: red;
 }
 
 #links li a span {
@@ -73,8 +66,18 @@ h1 {
 
 .column {
     width: 200px;
-    margin-right: 20px;
     float: left;
+}
+
+.column:not(:last-child) {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 30px;
 }
 
 a {
