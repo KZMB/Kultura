@@ -48,9 +48,9 @@ h1 {
     width: 200px;
     height: 200px;
     border: 1px solid #ddd;
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+    filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
 }
 
 #links li a:hover {
