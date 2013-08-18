@@ -9,9 +9,18 @@ body {
 
 /* Main menu */
 
+.logo {
+    float: left;
+    width: 105px;
+    height: 102px;
+    background-image: url(/img/logo.png);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
 .master {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin-bottom: 10px;
     background-color: purple;
     color: white;
@@ -19,6 +28,7 @@ body {
 
 .master h1 {
     text-transform: uppercase;
+    margin-left: 125px;
 }
 
 .master ul {
@@ -26,12 +36,13 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-left: 125px;
 }
 
 .master ul li {
     float: left;
     text-transform: uppercase;
-    margin-right: 2ex;
+    margin-right: 20px;
 }
 
 .master a {
