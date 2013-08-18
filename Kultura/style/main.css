@@ -1,0 +1,148 @@
+body {
+    padding-bottom: 40px;
+}
+
+.footer {
+    border-top: 3px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Main menu */
+
+.master {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    background-color: purple;
+    color: white;
+}
+
+.master h1 {
+    text-transform: uppercase;
+}
+
+.master ul {
+    font-size: 150%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.master ul li {
+    float: left;
+    text-transform: uppercase;
+    margin-right: 2ex;
+}
+
+.master a {
+    color: silver;
+}
+
+.master a:hover, .master a.active {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sidebar */
+
+.sidebar {
+    margin-top: 19px;
+}
+
+.affix {
+    position: static;
+    top: 0;
+}
+
+/* Event Calendar */
+
+.event {
+    padding-left: 2px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.event:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.event-date {
+    float: left;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 35px;
+    white-space: nowrap;
+    text-align: right;
+    width: 92px;
+    margin-left: -20px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-right: 15px;
+}
+
+.event-header {
+    float: left;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border-left: 6px solid;
+}
+
+.event-art     .event-header { border-color: purple; }
+.event-music   .event-header { border-color: green;  }
+.event-theatre .event-header { border-color: orange; }
+
+.event h2 {
+    margin-top: 0;
+}
+
+.event h3 {
+    color: #aaa;
+    font-size: 120%;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.event-body {
+    margin-left: 93px;
+    clear: both;
+}
+
+.event-banner {
+    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Content */
+
+.nav-tabs {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
+
+img.bordered {
+    border: 1px solid #ddd;
+}
+
+.indented {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.zoomable {
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+}
+
+.room-showcase .thumbnail {
+    height: 360px;
+    border: 1px solid #ddd;
+    background: rgb(249, 249, 249);
+}
+
+span.price {
+    width: 6em;
+    float: left;
+    text-align: right;
+    margin-right: 1ex;
+}
