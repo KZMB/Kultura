@@ -60,6 +60,10 @@ body {
     margin-top: 19px;
 }
 
+.twitter-timeline {
+    width: 100% !important;
+}
+
 /* Kalendář událostí */
 
 .event {
