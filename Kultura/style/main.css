@@ -124,6 +124,34 @@ body {
     padding-bottom: 20px;
 }
 
+/* Programové cykly */
+
+.cyklus span.datum {
+    float: left;
+    width: 70px;
+    text-align: right;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 3px solid silver;
+}
+
+.cyklus-vystava span.datum { border-color: purple; }
+.cyklus-koncert span.datum { border-color: green;  }
+.cyklus-divadlo span.datum { border-color: orange; }
+
+span.datum-vystava { border-color: purple !important; }
+span.datum-koncert { border-color: green !important;  }
+span.datum-divadlo { border-color: orange !important; }
+
+.cyklus .popis {
+    margin-left: 82px;
+}
+
+.cyklus .panel-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
 /* Content */
 
 .nav-tabs {
