@@ -65,7 +65,7 @@ body {
     top: 0;
 }
 
-/* Event Calendar */
+/* Kalendář událostí */
 
 .event {
     padding-left: 2px;
@@ -101,6 +101,11 @@ body {
 .event-art     .event-header { border-color: purple; }
 .event-music   .event-header { border-color: green;  }
 .event-theatre .event-header { border-color: orange; }
+
+.event-header p.cyklus:before {
+    content: "\f073 ";
+    font-family: FontAwesome;
+}
 
 .event h2 {
     margin-top: 0;
