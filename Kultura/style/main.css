@@ -7,6 +7,18 @@ body {
     margin-top: 20px;
 }
 
+/* Boostrap defaults */
+
+.nav-tabs {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
+
+.panel-heading h2 {
+    padding-top: 0;
+    margin-top: 10px;
+}
+
 /* Main menu */
 
 .logo {
@@ -145,7 +157,7 @@ body {
 .cyklus-divadlo span.datum { border-color: orange; }
 
 span.datum-vystava { border-color: purple !important; }
-span.datum-koncert { border-color: green !important;  }
+span.datum-koncert { border-color: green  !important; }
 span.datum-divadlo { border-color: orange !important; }
 
 .cyklus .popis {
@@ -158,11 +170,6 @@ span.datum-divadlo { border-color: orange !important; }
 }
 
 /* Content */
-
-.nav-tabs {
-    margin-top: 20px;
-    margin-bottom: 20px !important;
-}
 
 img.bordered {
     border: 1px solid #ddd;
