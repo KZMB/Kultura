@@ -7,7 +7,7 @@ body {
     margin-top: 20px;
 }
 
-/* Boostrap defaults */
+/* Boostrap Defaults */
 
 .nav-tabs {
     margin-top: 20px;
@@ -19,7 +19,7 @@ body {
     margin-top: 10px;
 }
 
-/* Main menu */
+/* Main Menu */
 
 .logo {
     float: left;
@@ -67,7 +67,7 @@ body {
     color: white;
 }
 
-/* Sidebar */
+/* Twitter Sidebar */
 
 .sidebar {
     margin-top: 19px;
@@ -77,7 +77,7 @@ body {
     width: 100% !important;
 }
 
-/* Kalendář událostí */
+/* Event Calendar */
 
 .event {
     padding-left: 2px;
@@ -110,11 +110,11 @@ body {
     border-left: 6px solid;
 }
 
-.event-art     .event-header { border-color: purple; }
-.event-music   .event-header { border-color: green;  }
+.event-art .event-header { border-color: purple; }
+.event-music .event-header { border-color: green; }
 .event-theatre .event-header { border-color: orange; }
 
-.event-header p.cyklus:before {
+.event-header p.series:before {
     content: "\f073 ";
     font-family: FontAwesome;
 }
@@ -141,9 +141,9 @@ body {
     padding-bottom: 20px;
 }
 
-/* Programové cykly */
+/* Show Series */
 
-.cyklus span.datum {
+.series span.date {
     float: left;
     width: 70px;
     text-align: right;
@@ -152,19 +152,19 @@ body {
     border-right: 3px solid silver;
 }
 
-.cyklus-vystava span.datum { border-color: purple; }
-.cyklus-koncert span.datum { border-color: green;  }
-.cyklus-divadlo span.datum { border-color: orange; }
+.series-art span.date { border-color: purple; }
+.series-music span.date { border-color: green; }
+.series-theatre span.date { border-color: orange; }
 
-span.datum-vystava { border-color: purple !important; }
-span.datum-koncert { border-color: green  !important; }
-span.datum-divadlo { border-color: orange !important; }
+span.date-art { border-color: purple !important; }
+span.date-music { border-color: green !important; }
+span.date-theatre { border-color: orange !important; }
 
-.cyklus .popis {
+.series .body {
     margin-left: 82px;
 }
 
-.cyklus .panel-footer {
+.series .panel-footer {
     margin-top: 20px;
     padding-top: 20px;
 }
