@@ -142,12 +142,23 @@ body {
 }
 
 .event-gallery {
-    padding-top: 20px;
+    margin-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    overflow: auto;
+	width: 100%;
+}
+
+.event-gallery a {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 22%;
+}
+
+.event-gallery a:not(:last-child) {
+    margin-right: 4%;
 }
 
 /* Show Series */
