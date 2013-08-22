@@ -22,17 +22,23 @@ function isShowExpired(show, referenceDate)
     return (expiryDate.getTime() < referenceDate.getTime());
 }
 
-$(document).ready(function() {
+function hideAllExpiredShows()
+{
     $('div.event').each(function() {
         if (isShowExpired(this)) {
-            // Hide the expired show
             $(this).hide();
-            // Move the banner down if present
-            var banner = $(this).next('.event-banner');
-            var nextShow = banner ? banner.next('.event') : null;
-            if (banner && nextShow) {
-                nextShow.after(banner);
-            }
         }
     });
+}
+
+function updateBannerPosition()
+{
+    var banner = $('.event-banner').first();
+    var firstVisibleShow = $('.event').not(":hidden").first()
+    firstVisibleShow.after(banner);
+}
+
+$(document).ready(function() {
+    hideAllExpiredShows();
+    updateBannerPosition();
 });
