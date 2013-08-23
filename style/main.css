@@ -67,6 +67,68 @@ body {
     color: white;
 }
 
+/* Husí slavnosti */
+
+.husy-promo {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 75px;
+    height: 116px;
+    background: url(/img/husa.png) top left no-repeat;
+    background-size: cover;
+    text-decoration: none !important;
+    z-index: 1000;
+}
+
+.husy-promo div {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 140px;
+    left: -280px;
+    top: -40px;
+    border-radius: 20px;
+    border: 8px solid orange;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.3);
+    padding: 10px;
+    padding-left: 20px;
+    color: #444;
+}
+
+.husy-promo div:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -24px;
+    top: 47px;
+    border: 12px solid;
+    border-color: orange transparent transparent orange;
+}
+
+.husy-promo div:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -7px;
+    top: 53px;
+    border: 10px solid;
+    border-color: white transparent transparent white;
+}
+
+.husy-promo h2 {
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.husy-promo:hover div {
+    display: block;
+}
+
 /* Twitter Sidebar */
 
 .sidebar {
