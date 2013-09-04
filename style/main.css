@@ -175,6 +175,7 @@ body {
 .event-art .event-header { border-color: purple; }
 .event-music .event-header { border-color: green; }
 .event-theatre .event-header { border-color: orange; }
+.event-course .event-header { border-color: brown; }
 
 .event-header p.series:before {
     content: "\f073 ";
@@ -238,10 +239,12 @@ body {
 .series-art span.date { border-color: purple; }
 .series-music span.date { border-color: green; }
 .series-theatre span.date { border-color: orange; }
+.series-course span.date { border-color: brown; }
 
 span.date-art { border-color: purple !important; }
 span.date-music { border-color: green !important; }
 span.date-theatre { border-color: orange !important; }
+span.date-course { border-color: brown !important; }
 
 .series .body {
     margin-left: 82px;
