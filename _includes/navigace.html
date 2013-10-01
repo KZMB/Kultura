@@ -1,0 +1,16 @@
+<div class="master">
+    <div class="container">
+        <div class="logo"></div>
+        <h1>Kulturní středisko Boskovice</h1>
+        <ul>
+        {% for node in site.navigation %}
+            {% assign nice_url = node.url | replace:'index.html', '' %}
+            {% if page.url == node.url or page.category == node.category %}
+                <li><a href="{{nice_url}}" class="active">{{node.title}}</a></li>
+            {% else %}
+                <li><a href="{{nice_url}}">{{node.title}}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+</div>
