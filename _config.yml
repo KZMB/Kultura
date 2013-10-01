@@ -1,4 +1,5 @@
 navigation:
     - {title: 'Kalendář akcí', category: events, url: '/kalendar/index.html'}
     - {title: 'Pronájem prostor', category: rent, url: '/pronajem/katolicky-dum.html'}
-    - {title: Podporujeme, category: support, url: '/podporujeme/index.html'}
+    - {title: 'Podporujeme', category: support, url: '/podporujeme/index.html'}
+    - {title: 'Blog', category: blog, url: '/blog/index.html'}

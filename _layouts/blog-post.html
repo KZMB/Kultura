@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | Kulturní středisko Boskovice</title>
+    {% include stylesheets.html %}
+    <link href="/style/blog.css" rel="stylesheet">
+</head>
+<body>
+    {% include navigace.html %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <div class="page-header">
+                    <h2>{{ page.title }}</h2>
+                </div>
+                {{ content }}
+            </div>
+            <div class="col-md-4 col-sm-12 hidden-sm">
+                <div class="page-header">
+                    <h2><small>Další příspěvky</small></h2>
+                </div>
+                <ul class="related-posts">
+                {% for post in site.posts %}
+                    {% if post.url != page.url %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% include paticka.html %}
+    {% include javascript.html %}
+</body>
+</html>
