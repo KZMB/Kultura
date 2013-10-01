@@ -229,7 +229,7 @@ body {
 
 .series span.date {
     float: left;
-    width: 70px;
+    width: 85px;
     text-align: right;
     padding-right: 10px;
     margin-right: 10px;
@@ -247,7 +247,7 @@ span.date-theatre { border-color: orange !important; }
 span.date-course { border-color: brown !important; }
 
 .series .body {
-    margin-left: 82px;
+    margin-left: 97px;
 }
 
 .series .panel-footer {
