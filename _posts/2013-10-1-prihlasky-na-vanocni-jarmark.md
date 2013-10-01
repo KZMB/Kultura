@@ -1,5 +1,5 @@
 ---
-title: Chystáme vánoční jarmark
+title: Přihlášky na vánoční jarmark
 category: blog
 layout: blog-post
 ---

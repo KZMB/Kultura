@@ -15,18 +15,16 @@
                     <h2>{{ page.title }}</h2>
                 </div>
                 {{ content }}
+                <hr>
+                <div class="post-info">
+                    <p>
+                        publikováno {{ page.date | date: "%-d. %m. %Y" }},
+                        <a href="{{ page.url }}">trvalý odkaz</a>
+                    </p>
+                </div>
             </div>
             <div class="col-md-4 col-sm-12 hidden-sm">
-                <div class="page-header">
-                    <h2><small>Další příspěvky</small></h2>
-                </div>
-                <ul class="related-posts">
-                {% for post in site.posts %}
-                    {% if post.url != page.url %}
-                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
+                {% include twitter-timeline.html %}
             </div>
         </div>
     </div>
