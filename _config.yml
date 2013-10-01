@@ -1,3 +1,4 @@
+permalink: '/:year/:month/:title.html'
 navigation:
     - {title: 'Kalendář akcí', category: events, url: '/kalendar/index.html'}
     - {title: 'Pronájem prostor', category: rent, url: '/pronajem/katolicky-dum.html'}
