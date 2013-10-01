@@ -3,94 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }} | Kulturní středisko Boskovice</title>
-    <link href="/style/main.css" rel="stylesheet">
-    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="/lib/zoomable-type/zt.css" rel="stylesheet">
-    <link href="/lib/lightbox/css/lightbox.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/lib/zoomable-type/zt.js"></script>
-    <script src="/lib/lightbox/js/lightbox-2.6.min.js"></script>
+    {% include stylesheets.html %}
 </head>
 <body>
-    <script>
-        $(document).ready(function() {
-            $('.zoomable').zoomabletype();
-        });
-    </script>
-    <div class="master">
-        <div class="container">
-            <div class="logo"></div>
-            <h1>Kulturní středisko Boskovice</h1>
-            <ul>
-            {% for node in site.navigation %}
-                {% assign nice_url = node.url | replace:'index.html', '' %}
-                {% if page.url == node.url or page.category == node.category %}
-                    <li><a href="{{nice_url}}" class="active">{{node.title}}</a></li>
-                {% else %}
-                    <li><a href="{{nice_url}}">{{node.title}}</a></li>
-                {% endif %}
-            {% endfor %}
-            </ul>
-        </div>
-    </div>
+    {% include navigace.html %}
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-sm-12">
                 {{ content }}
             </div>
             <div class="col-md-4 col-sm-12 hidden-sm">
-                <div class="sidebar">
-                    <a class="twitter-timeline" data-dnt="true" data-tweet-limit="5" href="https://twitter.com/KulturaB" data-chrome="nofooter transparent" data-widget-id="365743844979011584">Tweets by @KulturaB</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="col-md-3 col-xs-6">
-                <h2><small>Kontakt</small></h2>
-                <ul class="list-unstyled">
-                    <li>Kulturní středisko Boskovice</li>
-                    <li><a href="http://mapy.cz/s/8exA">Kpt. Jaroše 15</a></li>
-                    <li>68001 Boskovice</li>
-                    <li><span class="zoomable">516 45 35 44</span></li>
-                </ul>
-                <p>
-                    <a href="mailto:kultura@boskovice.cz">kultura@boskovice.cz</a><br>
-                    <a href="https://twitter.com/kulturab">Twitter</a> &middot;
-                    <a href="https://www.facebook.com/kulturaboskovice">Facebook</a>
-                </p>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <h2><small>Lidé</small></h2>
-                <p>
-                    <span class="text-muted">ředitel KZMB</span><br>
-                    PaedDr. Oldřich Kovář<br>
-                    <a href="mailto:o.kovar.knihovna@boskovice.cz">o.kovar.knihovna@boskovice.cz</a>
-                </p>
-                <p>
-                    <span class="text-muted">zástupce ředitele, dramaturg</span><br>
-                    Ivo Legner<br>
-                    <a href="mailto:legner@boskovice.cz">legner@boskovice.cz</a><br>
-                    <span class="zoomable">739 515 210</span>
-                </p>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <h2><small>Předprodej</small></h2>
-                <p>
-                    Městské informační středisko<br>
-                    <a href="http://mapy.cz/s/8A2b">Masarykovo nám. 1</a><br>
-                    Boskovice<br>
-                    <span class="zoomable">516 48 86 77</span>
-                </p>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <h2><small>Tiráž</small></h2>
-                <p>Naposledy aktualizováno v říjnu.</p>
+                {% include twitter-timeline.html %}
             </div>
         </div>
     </div>
-    <script src="/code/ga.js"></script>
+    {% include paticka.html %}
+    {% include javascript.html %}
 </body>
 </html>
