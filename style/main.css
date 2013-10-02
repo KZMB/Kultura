@@ -102,6 +102,11 @@ body {
     padding-left: 0;
 }
 
+.featured-posts li:before {
+    content: "✻  ";
+    color: gray;
+}
+
 /* Event Calendar */
 
 .event {
