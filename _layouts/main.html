@@ -9,10 +9,19 @@
     {% include navigace.html %}
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-sm-12">
+            <div class="main-content col-md-8 col-sm-12">
                 {{ content }}
             </div>
-            <div class="col-md-4 col-sm-12 hidden-sm">
+            <div class="sidebar col-md-4 col-sm-12 hidden-sm">
+                <div class="page-header">
+                    <h2>Výběr z blogu</h2>
+                </div>
+                <ul class="featured-posts">
+                {% for post in site.posts %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+                </ul>
+                <hr>
                 {% include twitter-timeline.html %}
             </div>
         </div>

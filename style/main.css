@@ -2,6 +2,8 @@ body {
     padding-bottom: 50px;
 }
 
+/* Patička */
+
 .footer hr {
     border-width: 3px;
     border-color: #ddd;
@@ -12,13 +14,21 @@ body {
 /* Boostrap Defaults */
 
 .nav-tabs {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px !important;
 }
 
 .panel-heading h2 {
     padding-top: 0;
     margin-top: 10px;
+}
+
+.main-content .page-header {
+    margin-top: 25px;
+}
+
+.main-content .page-header h2 {
+    margin-bottom: 5px;
 }
 
 /* Main Menu */
@@ -131,14 +141,27 @@ body {
     display: block;
 }
 
-/* Twitter Sidebar */
+/* Sidebar */
 
-.sidebar {
-    margin-top: 19px;
+.sidebar .page-header {
+    margin-top: 38px;
+}
+
+.sidebar .page-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .twitter-timeline {
     width: 100% !important;
+}
+
+.featured-posts {
+    text-transform: uppercase;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /* Event Calendar */
