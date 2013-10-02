@@ -10,7 +10,7 @@
     {% include navigace.html %}
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-sm-12">
+            <div class="main-content col-md-8 col-sm-12">
                 <div class="page-header">
                     <h2>{{ page.title }}</h2>
                 </div>
@@ -23,8 +23,19 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12 hidden-sm">
+            <div class="sidebar col-md-4 col-sm-12 hidden-sm">
+                <div class="page-header">
+                    <h2>Další články z blogu</h2>
+                </div>
+                <ul class="featured-posts">
+                {% for post in site.posts %}
+                    {% if page.url != post.url %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                <hr>
                 {% include twitter-timeline.html %}
+                </ul>
             </div>
         </div>
     </div>

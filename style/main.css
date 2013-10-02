@@ -252,6 +252,19 @@ body {
 
 /* Show Series */
 
+div.series {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-header + div.series {
+    margin-top: 25px;
+    border-top: none;
+}
+
 .series span.date {
     float: left;
     width: 85px;
