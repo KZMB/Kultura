@@ -1,3 +1,4 @@
+markdown: kramdown
 permalink: '/blog/:year/:month/:title.html'
 navigation:
     - {title: 'Kalendář akcí', category: events, url: '/kalendar/index.html'}
